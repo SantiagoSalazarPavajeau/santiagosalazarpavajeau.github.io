@@ -1,11 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 .App {
-  text-align: center;
+  display: grid;
+  font-family: 'Ubuntu', sans-serif;
+}
+.App-header {
+  display: grid;
+  grid-template-columns: [left] 1fr [right];
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header header {
+  display: flex;
+  justify-content: center;
+  color: #000;
 }
+
+.header {
+  filter: contrast(80%);
+  background-image: url("home-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  z-index: 1;
+  height: 500px;
+}
+
+.header2 {
+  filter: contrast(80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: white;
+  z-index: -1;
+  height: 700px;
+}
+
+.profile-card{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 5%;
+  background-color: white;
+  height: auto;
+  width: 50%;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0%;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pancake{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-image{
+  flex: 0 1 30%;
+  background-image: url("profile.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  margin: 50px;
+}
+
+.bio{
+  flex: 0 1 50%;
+  margin: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,16 +83,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
