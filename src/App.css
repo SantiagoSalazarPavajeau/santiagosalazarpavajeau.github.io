@@ -16,34 +16,24 @@
 }
 
 .header {
-  filter: contrast(80%);
-  background-image: url("home-bg.png");
-  background-repeat: no-repeat;
+  filter: contrast(95%);
+  /* background-image: url("home-bg.png"); */
+  /* background-repeat: no-repeat; */
   background-size: cover;
   text-align: center;
   z-index: 1;
-  height: 500px;
-}
-
-.header2 {
-  filter: contrast(80%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  background-color: white;
-  z-index: -1;
-  height: 700px;
+  height: 400px;
 }
 
 .profile-card{
   position: absolute;
-  top: 30%;
+  top: 5%;
   left: 25%;
   right: 5%;
   background-color: white;
   height: auto;
   width: 50%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 20px 20px;
   margin: 0%;
   z-index: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -67,12 +57,37 @@
 }
 
 .bio{
-  flex: 0 1 50%;
+  flex: 0 1 40%;
   margin: 40px;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: large;
 }
+
+.header2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  filter: contrast(95%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  z-index: -1;
+  height: 300px;
+}
+
+.project-card{
+  display: grid;
+  place-items: center;
+  width: 50%;
+  height: 15rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px 20px 20px 20px;
+  padding: 1rem;
+}
+
+
 
 
 

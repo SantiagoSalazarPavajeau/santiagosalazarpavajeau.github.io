@@ -1,15 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {ProjectCard, Project} from './components/ProjectCard'
+import projects from './data'
 
 function App() {
+
+  const renderProjects = () => {
+    return projects.map((project: Project) => <ProjectCard title={project.title} description={project.description} demo={project.demo} github={project.github} stack={project.stack} />)
+  }
   return (
     <div className="App">
       <header className="App-header">
         <div className="header">
           <header className="header">
-
-          </header>
           <div className="profile-card">
               <div className="pancake">
                 <div className="profile-image"/>
@@ -22,8 +26,10 @@ function App() {
                 </div>
               </div>
           </div>
+          </header>
+          
           <header className="header2">
-
+            {renderProjects()}
           </header>
 
         </div>
