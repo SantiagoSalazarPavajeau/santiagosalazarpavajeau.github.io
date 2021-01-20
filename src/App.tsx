@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {ProjectCard, Project} from './components/ProjectCard'
 import projects from './data'
+import bg from './bg.png';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <header className="App-header">
         <div className="header">
           <header className="header">
+          <img src={bg}/>
           <div className="profile-card">
               <div className="pancake">
                 <div className="profile-image"/>
