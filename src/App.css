@@ -3,52 +3,49 @@
 .App {
   display: grid;
   font-family: 'Fraunces', serif;
-}
-.App-header {
-  display: grid;
   grid-template-columns: [left] 1fr [right];
 }
+/* .App-header {
+  display: grid;
+  grid-template-columns: [left] 1fr [right];
+} */
 
-.App-header header {
+/* .App-header header {
   display: flex;
   justify-content: center;
   color: #000;
-}
+} */
 
 .header {
-  /* filter: contrast(95%); */
-  background: #373F47;
+  display: flex;
+  justify-content: center;
   width: 100vw;
-  /* background-image: url("home-bg.png"); */
-  /* overflow: hidden; */
-  /* opacity: 0.4; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   text-align: center;
   z-index: 1;
-  height: 500px;
+  height: 370px;
 }
 
 img{
   opacity: 0.4;
-  object-fit: fill;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.profile-card{
+/* .profile-card{
   position: absolute;
   background-color: transparent;
-  color: white;
-  height: 100%;
-  width: 80%;
+  color: #373F47;
+
   border-radius: 0px 0px 0px 0px;
   margin: 0%;
   z-index: 1;
-}
+} */
 
 .pancake{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
 }
 
 .profile-image{
@@ -58,10 +55,7 @@ img{
   background-repeat: no-repeat;
   border-radius: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 30%;
-  height: 0;
-  padding-bottom: 30%;
-  margin: 50px;
+
 }
 
 .bio{
@@ -73,31 +67,38 @@ img{
 }
 
 .header2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 1rem; */
   filter: contrast(95%);
   background-color: #373F47;
   background-size: cover;
   text-align: center;
-  z-index: -1;
-  height: 300px;
+  height: 100%;
+  width: auto;
+  /* overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap; */
 }
 
 .project-card{
-  display: grid;
-  place-items: center;
-  width: 50%;
-  height: 15rem;
+  flex: 0 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 300px;
   background-color: white;
   color: #373F47;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px 20px 0px 0px;
-  margin-top: auto;
+  border-radius: 5px 5px 5px 5px;
+  margin: 1rem;
   padding: 1rem;
+  
 }
 
-.project-card:hover{
+/* .project-card:hover{
   display: grid;
   place-items: center;
   width: 50%;
@@ -107,7 +108,7 @@ img{
   border-radius: 20px 20px 0px 0px;
   margin-top: auto;
   padding: 1rem;
-}
+} */
 
 button{
   background-color: white;

@@ -13,10 +13,11 @@ export const ProjectCard = ({title, description, demo, github,stack}: Project) =
     return (
         <>
             <div className="project-card">
-            <h2>{title}</h2>
+                <h2>{title}</h2>
                 <p>{description}</p>
-                <a href={demo}>Demo</a>
-                <a href={github}>Github</a>
+                <button> <a href={demo}>Demo </a></button>
+
+                <button><a href={github}>Github</a> </button>
                 <p>{stack}</p>
             </div>          
         </>
