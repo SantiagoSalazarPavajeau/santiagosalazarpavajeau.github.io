@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio_react_typescript/static/css/main.c80015da.chunk.css",
-    "main.js": "/portfolio_react_typescript/static/js/main.dbfd6246.chunk.js",
-    "main.js.map": "/portfolio_react_typescript/static/js/main.dbfd6246.chunk.js.map",
-    "runtime-main.js": "/portfolio_react_typescript/static/js/runtime-main.4e775e11.js",
-    "runtime-main.js.map": "/portfolio_react_typescript/static/js/runtime-main.4e775e11.js.map",
-    "static/js/2.0d667081.chunk.js": "/portfolio_react_typescript/static/js/2.0d667081.chunk.js",
-    "static/js/2.0d667081.chunk.js.map": "/portfolio_react_typescript/static/js/2.0d667081.chunk.js.map",
-    "static/js/3.983e5330.chunk.js": "/portfolio_react_typescript/static/js/3.983e5330.chunk.js",
-    "static/js/3.983e5330.chunk.js.map": "/portfolio_react_typescript/static/js/3.983e5330.chunk.js.map",
-    "index.html": "/portfolio_react_typescript/index.html",
-    "static/css/main.c80015da.chunk.css.map": "/portfolio_react_typescript/static/css/main.c80015da.chunk.css.map",
-    "static/js/2.0d667081.chunk.js.LICENSE.txt": "/portfolio_react_typescript/static/js/2.0d667081.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/portfolio_react_typescript/static/media/profile.82c4cc6e.png"
+    "main.css": "/santiagosalazarpavajeau.live/static/css/main.0267f731.chunk.css",
+    "main.js": "/santiagosalazarpavajeau.live/static/js/main.dbfd6246.chunk.js",
+    "main.js.map": "/santiagosalazarpavajeau.live/static/js/main.dbfd6246.chunk.js.map",
+    "runtime-main.js": "/santiagosalazarpavajeau.live/static/js/runtime-main.51fde8dd.js",
+    "runtime-main.js.map": "/santiagosalazarpavajeau.live/static/js/runtime-main.51fde8dd.js.map",
+    "static/js/2.0d667081.chunk.js": "/santiagosalazarpavajeau.live/static/js/2.0d667081.chunk.js",
+    "static/js/2.0d667081.chunk.js.map": "/santiagosalazarpavajeau.live/static/js/2.0d667081.chunk.js.map",
+    "static/js/3.983e5330.chunk.js": "/santiagosalazarpavajeau.live/static/js/3.983e5330.chunk.js",
+    "static/js/3.983e5330.chunk.js.map": "/santiagosalazarpavajeau.live/static/js/3.983e5330.chunk.js.map",
+    "index.html": "/santiagosalazarpavajeau.live/index.html",
+    "static/css/main.0267f731.chunk.css.map": "/santiagosalazarpavajeau.live/static/css/main.0267f731.chunk.css.map",
+    "static/js/2.0d667081.chunk.js.LICENSE.txt": "/santiagosalazarpavajeau.live/static/js/2.0d667081.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/santiagosalazarpavajeau.live/static/media/profile.82c4cc6e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e775e11.js",
+    "static/js/runtime-main.51fde8dd.js",
     "static/js/2.0d667081.chunk.js",
-    "static/css/main.c80015da.chunk.css",
+    "static/css/main.0267f731.chunk.css",
     "static/js/main.dbfd6246.chunk.js"
   ]
 }
