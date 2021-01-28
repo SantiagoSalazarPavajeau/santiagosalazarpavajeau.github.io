@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {ProjectCard, Project} from './components/ProjectCard'
 import projects from './data'
-import bg from './bg.png';
+// import bg from './bg.png';
 
 function App() {
 
