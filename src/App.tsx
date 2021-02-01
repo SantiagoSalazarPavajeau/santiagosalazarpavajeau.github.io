@@ -18,7 +18,8 @@ function App() {
               .then(resp=> resp.json())
               .then((posts) => {
                 setLoading(false)
-                setPosts(posts)
+                let sorted: Post[] = posts.sort((a: Post, b: Post) => {return b.positive_reactions_count && a.positive_reactions_count ? b.positive_reactions_count - a.positive_reactions_count : null} )
+                setPosts(sorted)
               })
   }
   getPosts(postsURL)
@@ -29,14 +30,14 @@ function App() {
   }
 
   const renderPosts = () => {
-    return posts && posts.map( (post: Post) =>  <PostCard title={post.title} description={post.description} readable_publish_date={post.readable_publish_date} />)
+
+    return posts && posts.map( (post: Post) =>  <PostCard title={post.title} description={post.description} readable_publish_date={post.readable_publish_date} url={post.url} />)
   }
 
   return (
     <div className="App">
 
         <div className="header">
-        {/* <img src={bg} alt="sky" /> */}
               <div className="pancake">
                 <div className="profile-image"/>
                 <div className="bio">

@@ -28,14 +28,16 @@ export interface Post{
 }
 
 
-export const PostCard = ({title, description, readable_publish_date}: Post) => {
+export const PostCard = ({title, description, readable_publish_date, url}: Post) => {
     return (
         <>
+            <a href={url}>
             <div className="project-card">
                 <h2>{title}</h2>
                 <p>{description}</p>
                 <h3>{readable_publish_date}</h3>
-            </div>          
+            </div>  
+            </a>        
         </>
     )
 } 
