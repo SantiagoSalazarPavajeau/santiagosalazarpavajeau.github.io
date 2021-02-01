@@ -1,15 +1,37 @@
-import React from 'react';
-// import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import {ProjectCard, Project} from './components/ProjectCard'
-import projects from './data'
-// import bg from './bg.png';
+import {projects, postsURL} from './APIHelpers'
+// import {sortPosts} from './dataServices'
+import {Post, PostCard} from './components/PostCard'
+
 
 function App() {
+
+  const [posts, setPosts] = useState<Post[]>()
+  const [loading, setLoading] = useState<boolean>(true)
+
+  useEffect(() =>{
+
+    const getPosts = async (postsURL: string) => {
+      await fetch(postsURL)
+              .then(resp=> resp.json())
+              .then((posts) => {
+                setLoading(false)
+                setPosts(posts)
+              })
+  }
+  getPosts(postsURL)
+  }, [])
 
   const renderProjects = () => {
     return projects.map((project: Project) => <ProjectCard title={project.title} description={project.description} demo={project.demo} github={project.github} stack={project.stack} />)
   }
+
+  const renderPosts = () => {
+    return posts && posts.map( (post: Post) =>  <PostCard title={post.title} description={post.description} readable_publish_date={post.readable_publish_date} />)
+  }
+
   return (
     <div className="App">
 
@@ -29,6 +51,9 @@ function App() {
           
           <div className="header2">
             {renderProjects()}
+          </div>
+          <div className="header2">       
+            {renderPosts()}
           </div>
 
     </div>
