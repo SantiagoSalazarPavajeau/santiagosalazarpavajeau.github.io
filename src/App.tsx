@@ -53,7 +53,8 @@ function App() {
           <div className="header2">
             {renderProjects()}
           </div>
-          <div className="header2">       
+          <h1 className="blog-title">Blog...</h1>       
+          <div className="header3">
             {renderPosts()}
           </div>
 
