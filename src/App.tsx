@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <div className="content">
         <div className="header">
               <div className="pancake">
                 <div className="profile-image"/>
@@ -50,14 +50,16 @@ function App() {
               </div>
         </div>
           
-          <div className="header2">
-            {renderProjects()}
-          </div>
-          <h1 className="blog-title">Blog...</h1>       
+        <div className="header2">
+          {renderProjects()}
+        </div>
+        <div className="blogs">
           <div className="header3">
+          <h1 className="blog-title">Technical Blog:</h1>   
             {renderPosts()}
           </div>
-
+        </div>
+      </div>
     </div>
   );
 }

@@ -33,7 +33,7 @@ export const PostCard = ({title, description, readable_publish_date, url}: Post)
         <>
 
             <a href={url}>
-            <div className="project-card">
+            <div className="post">
                 <h2>{title}</h2>
                 <h3>{readable_publish_date}</h3>
                 <p>{description}</p>
