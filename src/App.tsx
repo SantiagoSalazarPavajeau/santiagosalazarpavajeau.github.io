@@ -41,7 +41,7 @@ function App() {
               <div className="pancake">
                 <div className="profile-image"/>
                 <div className="bio">
-                  <p>Hello, I am </p> <h1>Santiago Salazar Pavajeau</h1> <p>I am a software engineer with a background in business and science with a passion for collaboration and innovative technical projects.</p>
+                  <p>Hello! I am </p> <h1>Santiago Salazar Pavajeau</h1> <p> I am a software engineer, MBA, and chemistry and biomedical sciences graduate with a passion for collaboration and innovative technical projects.</p>
                   <button><a href="https://www.linkedin.com/in/santiago-salazar-pavajeau/" >LinkedIn</a></button> 
                   <button><a href="https://twitter.com/santispavajeau">Twitter</a></button>
                   <button><a href="https://docs.google.com/document/d/1CMit1ahDwgmCB30EgI9euKEVLYz6YYXTIG7H19If2bg/edit?usp=sharing">Resume</a></button>
