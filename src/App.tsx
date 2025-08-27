@@ -41,10 +41,10 @@ function App() {
               <div className="pancake">
                 <div className="profile-image"/>
                 <div className="bio">
-                  <p>Hello! I am </p> <h1>Santiago Salazar Pavajeau</h1> <p> a Senior Site Reliability Engineer passionate about making complex systems fast, resilient, and easy to operate. From managing 2k+ clusters in AWS to automating away thousands of alerts, I design infrastructure that just works — and keeps working.</p>
+                  <p>Hello! I am </p> <h1>Santiago Salazar Pavajeau</h1> <p> Senior Site Reliability Engineer passionate about making complex systems fast, resilient, and easy to operate. From managing 2k+ clusters in AWS to automating away thousands of alerts, I design infrastructure that just works — and keeps working.</p>
                   <button><a href="https://www.linkedin.com/in/santiago-salazar-pavajeau/" >LinkedIn</a></button> 
                   <button><a href="https://github.com/SantiagoSalazarPavajeau">Github</a></button>
-                  <button><a href="https://drive.google.com/file/d/1XHk5-maozwReayUIgDEctcfgoeWjeZgO/view?usp=sharing">Resume</a></button>
+                  <button><a href="https://docs.google.com/document/d/1IpuLByMyrhRhc5IQBB3fAKs0Spls7gT41O7ByZNQkLE/edit?usp=sharing">Resume</a></button>
                   <button><a href="https://dev.to/santispavajeau">Blog</a></button>
                 </div>
               </div>

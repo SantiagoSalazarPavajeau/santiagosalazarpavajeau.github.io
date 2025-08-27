@@ -22,13 +22,26 @@
     height: 290px;
   }
 }
+.profile-image{
+  flex: 0 1 25%;
+  background-image: url("profile.png");
+  width: 100%;
+  max-width: 290px;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 @media (min-width: 701px) and (max-width: 1100px) {
   .App {
     font-size: 1.5vw;
   }
   .profile-image{
-    height: 25vw;
+    max-width: 290px;
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -36,18 +49,20 @@
 
 @media screen and (max-width: 700px) {
   .App {
-    font-size: 2.3vw;
-  }
   .profile-image{
+    max-width: 25vw;
+    aspect-ratio: 1 / 1;
+  }
     height: 25vw;
   }
 }
 
 .header {
   display: flex;
-  justify-content: center;
-  width: auto;
-  text-align: center;
+  .profile-image{
+    max-width: 40vw;
+    aspect-ratio: 1 / 1;
+  }
   z-index: 1;
   height: 370px;
 }
@@ -70,9 +85,12 @@ img{
 .profile-image{
   flex: 0 1 25%;
   background-image: url("profile.png");
-  background-size: 100% 100%;
+  width: 290px;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
