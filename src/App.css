@@ -18,15 +18,12 @@
   .App {
     font-size: 17px;
   }
-  .profile-image{
-    height: 290px;
-  }
 }
+
 .profile-image{
   flex: 0 1 25%;
   background-image: url("profile.png");
-  width: 100%;
-  max-width: 290px;
+  width: min(290px, 40vw);
   aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
@@ -39,30 +36,18 @@
   .App {
     font-size: 1.5vw;
   }
-  .profile-image{
-    max-width: 290px;
-    aspect-ratio: 1 / 1;
-  }
 }
 
 
 
 @media screen and (max-width: 700px) {
-  .App {
   .profile-image{
-    max-width: 25vw;
-    aspect-ratio: 1 / 1;
-  }
-    height: 25vw;
+    width: min(25vw, 290px);
   }
 }
 
 .header {
   display: flex;
-  .profile-image{
-    max-width: 40vw;
-    aspect-ratio: 1 / 1;
-  }
   z-index: 1;
   height: 370px;
 }
@@ -82,17 +67,6 @@ img{
   height: 390px;
 }
 
-.profile-image{
-  flex: 0 1 25%;
-  background-image: url("profile.png");
-  width: 290px;
-  height: 290px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .bio{
   flex: 0 1 40%;
