@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Deployment
+
+This project is configured to deploy to a custom domain using GitHub Pages.
+
+1. Ensure this repository has a remote pointing at your GitHub Pages repo:
+   ```bash
+   git remote add origin git@github.com:SantiagoSalazarPavajeau/santiagosalazarpavajeau.github.io.git
+   ```
+2. Commit any changes and run the deployment script:
+   ```bash
+   npm run deploy
+   ```
+   This builds the project and publishes the contents of the `build` folder to the `gh-pages` branch.
+
+3. Verify that the `CNAME` file contains `santiagosalazarpavajeau.live` so GitHub Pages serves the site at the custom domain.
+
+After DNS records propagate, the portfolio will be available at [https://santiagosalazarpavajeau.live](https://santiagosalazarpavajeau.live).
